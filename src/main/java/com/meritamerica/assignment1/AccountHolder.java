@@ -7,11 +7,13 @@ public class AccountHolder {
 	private String ssn;
 	private CheckingAccount checkingAccount;
 	private SavingsAccount savingsAccount;
+	//Parameterized constructor
 	public AccountHolder(String firstName, String middleName, String lastName, String ssn, double checkingAccountOpeningBalance, double savingsAccountOpeningBalance) {
 		this.firstName = firstName;
 		this.middleName = middleName;
 		this.lastName = lastName;
 		ssn = ssn;
+		this.
 		
 	}
 	public String getFirstName() {

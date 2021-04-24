@@ -6,6 +6,7 @@ public class MeritAmericaBankApp {
 		AccountHolder neeraja = new  AccountHolder("Neeraja",  "_", "Paladugu", "12345", 1000, 0);
 		
 		
+		
 	}
 	
 }
