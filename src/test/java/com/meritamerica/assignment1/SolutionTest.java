@@ -93,7 +93,6 @@ public class SolutionTest {
         
         assertEquals(true, accountHolder.getSavingsAccount().deposit(500.0));
     }
-
     @Test
     public void testDepositNegativeAmountInSavingsAccount(){
         AccountHolder accountHolder = new AccountHolder(

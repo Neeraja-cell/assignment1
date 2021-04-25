@@ -12,10 +12,13 @@ public class AccountHolder {
 		this.firstName = firstName;
 		this.middleName = middleName;
 		this.lastName = lastName;
-		ssn = ssn;
-		this.
+		this.ssn = ssn;
+		this.checkingAccount = new CheckingAccount(checkingAccountOpeningBalance);
+		this.savingsAccount = new SavingsAccount(savingsAccountOpeningBalance);
+
 		
 	}
+	
 	public String getFirstName() {
 		return firstName;
 	}
@@ -34,6 +37,7 @@ public class AccountHolder {
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
+	
 	public String getSsn() {
 		return ssn;
 	}
@@ -52,6 +56,11 @@ public class AccountHolder {
 	public void setSavingsAccount(SavingsAccount savingsAccount) {
 		this.savingsAccount = savingsAccount;
 	}
-	
+	@Override
+	public String toString() {
+		return "AccountHolder [firstName=" + firstName + ", middleName=" + middleName + ", lastName=" + lastName
+				+ ", ssn=" + ssn + ", checkingAccount=" + checkingAccount + ", savingsAccount=" + savingsAccount + "]";
+	}
+
 	
 }
