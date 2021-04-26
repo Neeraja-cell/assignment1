@@ -36,7 +36,7 @@ public class SavingsAccount {
 		this.futureVal = futureVal;
 	}
 	public boolean withdraw(double amount) {
-		if (amount < this.balance) {
+		if (amount < this.balance && amount > 0) {
 			balance -= amount;
 			return true;
 		}  

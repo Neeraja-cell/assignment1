@@ -28,19 +28,29 @@ public class CheckingAccount  {
 	public void setInterestRate(double interestRate) {
 		this.interestRate = interestRate;
 	}
-	public boolean withdraw(double amount) {
-		if (amount < this.balance) {
+	// this is the method for with draw for fonds
+	//the amount withdraw has to be less than the balance in the account
+	public boolean withdraw(double amount)
+
+	 {
+		if (amount < this.balance && amount > 0) {
 			balance -= amount;
 			return true;
 		}  
 		return false;
 		
 	}
+	//this is method is fo depositing funds.If amount is >0 retn True
+	//balance is less than 0 it will print you cant deposit
+	
 	public boolean deposit(double amount) {
-		if (amount > this.balance) {
+		if (amount > 0) {
 			balance += amount;
 			return true;
+		}else {
+			System.out.println(" You canot deposit a negative amount");
 		}
+		
 		return false;
 	}
 	
@@ -51,7 +61,7 @@ public class CheckingAccount  {
 		
 	}
 
-	
+	//the to string method will print the hidden values
 	@Override
 	public String toString() {
 		return "CheckingAccount [balance=" + balance + ", interestRate=" + interestRate + ", futureVal=" + futureVal
